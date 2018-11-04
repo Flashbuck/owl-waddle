@@ -4,7 +4,7 @@ function Vector(array)
 {
     for (var i = 0; i < array.length; i++) {
         if (typeof(array[i]) == 'object' && array[i].length) { 
-            flat(array[i]);
+            Vector(array[i]);
         } else if(array[i].length!=0){
             b.push(array[i]);
         }
