@@ -3,7 +3,7 @@ b=[];
 function Vector(array)
 {
     for (var i = 0; i < array.length; i++) {
-        if (typeof(array[i]) == 'object' && array[i].length) { 
+        if (typeof(array[i]) == 'object') { 
             Vector(array[i]);
         } else if(array[i].length!=0){
             b.push(array[i]);
